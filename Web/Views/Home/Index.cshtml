@@ -1,0 +1,24 @@
+﻿@model Web.Models.MessageModel
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Inkommna Meddelanden</h2>
+
+<table class="messages">
+    <thead>
+        <tr>
+            <th class="text">Meddelande</th>
+            <th class="time">Tidpunkt</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Messages)
+        {
+            <tr>
+                <td class="text">@item.Text</td>
+                <td class="time">@item.TimeStamp</td>
+            </tr>
+        }
+    </tbody>
+</table>
