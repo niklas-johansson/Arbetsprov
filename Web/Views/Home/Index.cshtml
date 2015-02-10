@@ -20,5 +20,12 @@
                 <td class="time">@item.TimeStamp</td>
             </tr>
         }
+
+        @if (Model.Messages.Count == 0)
+        {
+            <tr>
+                <td colspan="2">Det finns inga meddelanden än.</td>
+            </tr>
+        }
     </tbody>
 </table>
