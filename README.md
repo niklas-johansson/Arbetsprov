@@ -1,2 +1,2 @@
 # Arbetsprov
-This is for internal use only.
+This is for personal use only.
